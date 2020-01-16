@@ -25,7 +25,7 @@ MEDIA = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = 'v$6h8vn7o8u5r8@+4kqc36)^1_il_be$nbh_i9j&k#!9p8c#&i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -131,9 +131,8 @@ STATICFILES_URL = [STATIC_DIR]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_HOST = 'smtp.sendgrid.net'
 # EMAIL_HOST_USER = 'apikey'
-# EMAIL_HOST_PASSWORD = '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'
+# EMAIL_HOST_PASSWORD = 
 # EMAIL_HOST_PORT = 587
 # EMAIL_HOST_USE_TLS = True
 # import os
 # EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-# SEND_API_KEY = os.environ.get("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")

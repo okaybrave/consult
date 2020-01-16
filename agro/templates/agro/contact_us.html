@@ -1,0 +1,24 @@
+{% extends 'agro/base.html'%}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="wrap3">
+	</div>
+	<form method="post">
+		 {% csrf_token %}
+	<div class="container">
+		 {{form|crispy}}
+	 <div class="form-actions"></div>
+	 <button class="btn btn-success">Submit</button>
+	 </div>
+	</form>
+
+</body>
+</html>
+{% endblock %}

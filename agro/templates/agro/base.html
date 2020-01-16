@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'agro/css/bootstrap.min.css'%}"> -->
+	<!-- bootstrap -->
+	<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+	<link	rel="stylesheet"	href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<!-- animated -->
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+	<!-- font aweson -->
+	<!-- <link rel="stylesheet" type="text/css" href="{% static 'agro/css/all.min.css'%}"> -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'agro/css/agrocss.css'%}">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default navbar-expand-lg">
+    		<a class="navbar-brand" href="{%url 'home_index.html'%}">
+    			<img src="{%static 'agro/img/agrologo.png'%}" height="60" width="150"alt="logo">
+    		</a>
+    		<button type="button" class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#mytoggle">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="mytoggle" class="navbar-collapse collapse">
+    		<ul class="navbar-nav navbar-right">
+      		
+		    <li class="nav-item">
+		    	<a class="nav-link text-success text-size-80" href="{%url 'contact_us.html'%}">Contact Us</a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-success" href="{%url 'service.html'%}">Services</a>
+		    </li>
+		    <li class="nav-item">
+		    	<a class="nav-link text-success" href="{% url 'about_us.html'%}">About Us</a>
+		    </li>
+			</ul>
+		</div>
+
+		</nav>
+	</header>
+	
+	{% block page_content %}
+	{% endblock %}
+	<div class="container-fluid ">
+		<div class="row social animated slideInUp">
+			<div class="col-2"></div>
+			<div class="col">
+				<h4><b>Contact Us</b></h4>
+				<p><b>&#9742;phone number:</b><br>+2348160379283</p>
+				<p><b>&#9949;Email Address</b><br>agrofastconsulting@gmail.com</p>
+			</div>
+		<div class="col">
+			<h4>Connect with us</h4>
+			<i class="btn btn-primary fab fa-facebook-f"></i>
+			<i class="btn btn-primary fab fa-instagram"></i>
+			<i class="btn btn-primary fas fa-envelope"></i> 
+			<i class="btn btn-primary fab fa-linkedin"></i>
+		</div>
+		</div>
+		</div>
+	<div class="footer bg-success">
+		<p class="text-center">consult with us let farming work for you <br>&copy;2020/2021</p>
+	</div>
+	<script src="{%static 'agro/js/jquery.js'%}"></script>
+	<script src="{% static 'agro/js/bootstrap.js'%}"></script>
+	<script src="{% static 'agro/js/agrojs.js'%}"></script>
+</body>
+
+</html>

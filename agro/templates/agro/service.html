@@ -1,0 +1,48 @@
+{% extends 'agro/base.html'%}
+{% block page_content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Our services</title>
+</head>
+<body>
+	<div class="wrap1">
+	</div>
+	<p class="text-success text-center pwap1">HOW CAN WE SUPPORT YOU?</p>
+	<h4 class="text-success text-center"><b>Our consultancy services<b></h4>
+		<hr>
+	<div class="container">
+		<div class="row">
+			<div class="col sec-1">
+				<img src="{%static 'agro/img/catf.png'%}" class="rounded-circle">
+				<p class="text-justify pl-5">Fish farming</p>
+			</div>
+			<div class="col sec-2">
+				<img src="{%static 'agro/img/pigg.jpg'%}" class="rounded-circle">
+				<p class="text-justify pl-5">Pig Farming</p>
+			</div>
+			<div class="col sec-3">
+				<img src="{%static 'agro/img/hen.jpg'%}" class="rounded-circle">
+				<p class="text-justify pl-5">poultry Farming</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col sec-4">
+				<img src="{%static 'agro/img/turkey.jpg'%}" class="rounded-circle">
+				<p class="text-justify pl-5">Turckey Farming</p>
+			</div>
+			<div class="col sec-5">
+				<img src="{%static 'agro/img/guineajpg.jpg'%}" class="rounded-circle">
+				<p class="text-justify pl-5">Guinea-Fowl Farming</p>
+			</div>
+			<div class="col sec-6">
+				<img src="{%static 'agro/img/duck.jpg'%}" class="rounded-circle">
+				<p class="text-justify pl-5">Duck Farming</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+{% endblock%}
